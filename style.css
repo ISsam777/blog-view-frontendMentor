@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+:root {
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray-500: hsl(0, 0%, 42%);
+  --clr-gray-950: hsl(0, 0%, 7%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-yellow);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 10px;
+  border: 1px solid var(--clr-gray-950);
+  box-shadow: 10px 10px var(--clr-gray-950);
+  border-radius: 30px;
+  height: 560px;
+  max-width: 400px;
+  gap: 10px;
+  background-color: var(--clr-white);
+}
+p {
+  color: var(--clr-gray-500);
+  font-weight: 500;
+  font-size: 16px;
+}
+#learning {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--clr-yellow);
+  margin-left: 20px;
+}
+#illustration {
+  margin: 20px auto 0px auto;
+  /*max-width: 100%;*/
+  width: 360px;
+  display: block;
+  border-radius: 10px;
+}
+h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+p,
+h2,
+h3,
+#avatar {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.profile {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h2,
+#name,
+#learning {
+  font-weight: 800;
+}
+h3 {
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+#avatar {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    max-width: 300px;
+    margin: auto 5px;
+  }
+  #illustration {
+    max-width: 90%;
+  }
+}
+
+h2:hover {
+  cursor: pointer;
+  color: var(--clr-yellow);
+  transition: 0.3s;
+}
