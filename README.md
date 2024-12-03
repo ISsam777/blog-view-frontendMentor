@@ -8,7 +8,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://blog-view-frontend-mentor.vercel.app/)
+- Solution URL: [solution URL](https://blog-view-frontend-mentor.vercel.app/)
 
 ### Built with
 
